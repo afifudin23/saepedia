@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - 2026-06-30
+
+### Detail Versi 0.1.1
+
+Penyempurnaan dokumentasi & tooling tanpa perubahan perilaku aplikasi.
+
+#### 📝 Documentation
+
+- **Deskripsi:**
+  - **README:** Dirombak agar sesuai kondisi terintegrasi backend — perbaiki tarif
+    ongkir (Rp20/10/5 ribu), SLA overdue (Regular 3 hari), aturan diskon (**satu
+    kode per checkout**), kode voucher/promo demo, tabel keamanan FE vs BE, dan
+    struktur folder; hapus referensi mock/`db.js`/Prisma
+  - **Developer Guide:** Tambah `docs/DEVELOPER_GUIDE.md` (tech stack, arsitektur
+    ringkas, quick start, env, scripts, konvensi kode, cara menambah fitur)
+  - **Changelog Guide:** Perbaiki `docs/CHANGELOG_GUIDE.md` yang sebelumnya berisi
+    konten proyek lain → disesuaikan untuk SEAPEDIA Web (React/Vite)
+
+#### 🔧 Configuration
+
+- **Deskripsi:**
+  - **Release Script:** Pindah `scripts/release.mjs` → `scripts/release.js`
+    (`package.json` `type: module` membuat `.js` sudah ESM); `npm run release` diperbarui
+
+#### 🎨 UI/UX
+
+- **Deskripsi:**
+  - **Pesan Error Koneksi:** Diganti lebih ramah saat backend tidak aktif
+    ("Server SEAPEDIA sedang tidak aktif. Coba lagi sebentar ya 🙏")
+
+---
+
 ## [0.1.0] - 2026-06-30
 
 ### Detail Versi 0.1.0
@@ -106,3 +138,4 @@ dengan SEAPEDIA API (Go).
   - Loading spinner + empty state + panduan 3 langkah di beranda
 
 ---
+

@@ -7,7 +7,7 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) dan
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - **Sumber versi:** field `version` di `package.json`.
-- **Release otomatis:** `npm run release` (lihat `scripts/release.js`) — bump
+- **Release otomatis:** `npm run release` (lihat `scripts/release.js`) 	— bump
   version, commit, tag, dan push. Script menolak release bila `CHANGELOG.md`
   belum punya entry `## [X.Y.Z]` untuk versi target.
 - **Changelog aktif:** lihat [`../CHANGELOG.md`](../CHANGELOG.md).
@@ -116,16 +116,19 @@ Gunakan template ini saat menambahkan versi baru di `CHANGELOG.md`:
 ## Pedoman Versioning
 
 ### MAJOR (X.0.0)
+
 - Perubahan yang memutus kompatibilitas (auth, struktur rute, kontrak data UI)
 - Penyesuaian besar yang mengharuskan aksi pengguna (mis. login ulang)
 - Penggantian/penghapusan halaman atau alur utama
 
 ### MINOR (0.X.0)
+
 - Penambahan halaman/komponen/fitur yang backward-compatible
 - Penambahan opsi/field opsional pada form atau tampilan
 - Peningkatan UX signifikan tanpa memutus alur lama
 
 ### PATCH (0.0.X)
+
 - Bug fix
 - Perbaikan styling/teks/copy
 - Peningkatan performa kecil tanpa perubahan perilaku
@@ -181,8 +184,8 @@ Gunakan template ini saat menambahkan versi baru di `CHANGELOG.md`:
 
 ## Version History Reference
 
-| Version | Date       | Type    | Description                                                        |
-| ------- | ---------- | ------- | ----------------------------------------------------------------- |
+| Version | Date       | Type    | Description                                                          |
+| ------- | ---------- | ------- | -------------------------------------------------------------------- |
 | 0.1.0   | 2026-06-30 | Initial | Frontend Level 1–7 + integrasi SEAPEDIA API, UI modern, foto produk |
 
 ---
